@@ -1,0 +1,17 @@
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	cane = commit --amend --no-edit
+	adog = log --all --decorate --oneline --graph
+	fo = fetch origin
+	pci = pair-commit
+        cop = !git checkout $1 && git pull origin $1
+[user]
+	email = 
+[core]
+[apply]
+[core]
+[core]
+	excludesfile = /Users/caprice/.gitignore
