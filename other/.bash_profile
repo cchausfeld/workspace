@@ -1,6 +1,4 @@
-## Prompt display config ##
-
-## Parse Git Branch ##
+## Display Git Branch with change status ##
 function parse_git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]] && echo "*"
 }
@@ -13,15 +11,16 @@ function parse_git_branch {
 export PS1="\[\e[36m\]\t \[\e[35m\]\w \[\e[92m\]\$(parse_git_branch)\[\033[00m\]$\[\e[m\] "
 
 ## Aliases ##
+alias be="bundle exec"
+alias catbash="cat ~/.bash_profile"
+alias dc="docker-compose"
+alias fucking="sudo"
 alias gst="git status"
 alias please="sudo"
-alias fucking="sudo"
-alias catbash="cat ~/.bash_profile"
 alias refresh="source ~/.bash_profile"
-alias cdws="cd /Users/caprice/code/MarleySpoon"
-alias be="bundle exec"
-alias berci="bundle exec rake ci"
-alias dc="docker-compose"
+
+## MS specific aliases ##
+alias cdws="cd $HOME/code/MarleySpoon"
 alias fuck="yarn standard --fix"
 
 # git auto-complete
