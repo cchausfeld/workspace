@@ -9,9 +9,10 @@
 	pci = pair-commit
         cop = !git checkout $1 && git pull origin $1
 [user]
-	email = 
+	email = cchausfeld@gmail.com
+	name = cchausfeld
 [core]
 [apply]
 [core]
 [core]
-	excludesfile = /Users/caprice/.gitignore
+	excludesfile = /Users/cappyhausfeld/.gitignore_global
